@@ -1,7 +1,2 @@
 #!/bin/bash
-while IFS= read -r line; do
-  first_char="${line:0:1}"  # Extract the first character
-  decoded_message="${decoded_message}${first_char}"
-done
-
-echo "Decoded Message: $decoded_message"
+cut -c 1 | paste -s -d "
